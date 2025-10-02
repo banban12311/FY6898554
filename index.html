@@ -27,7 +27,13 @@ body {
   color:#111;
 }
 
-        p.ex1{margin-left: 250px; }
+        p.ex1{margin-left: 250px;
+              margin-left: 250px;
+  white-space: pre-wrap; 
+  font-family: Calibri, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;}
+        
         pre.ex1 { margin-left: 250px; 
                  white-space: pre-wrap;              
                   font-family: Calibri, Arial, Helvetica, sans-serif; 
@@ -56,16 +62,16 @@ body {
           
 
 <h3 id="Abstract">Abstract</h3>
-<pre class="ex1">
+<p class="ex1">
     This paper presents a novel adaptive active learning strategy. The most accurate classification model from a heterogeneous
     classifier pool is selected at each learning epoch, Our goal is to achieve greater incremental improvement in accuracy, compared
     to using a single type of classification model throughout the process. The strategy is evaluated on benchmark data sets.
     We further consider an application to texture classification problems in sonar mosaic imagery and compare it with non-adaptive
     active learning and traditional machine learning approaches. Our resuits show that..e conclude that..
-</pre>    
+</p>    
           
 <h3 id="Introduction">Introduction</h3>
-<pre class="ex1">
+<p class="ex1">
     Active Learning (Angluin, 1988, Cohn et al., 1994) is a paradigm where a concept is learnt by an 
   intelligent machine through the interaction of an oracle with the machine system, over a sequence of 
   learning epochs. A distinctive component in an active system is the querying strategy, used to sample 
@@ -80,7 +86,7 @@ body {
   learning at each epoch. The process is continued until some stopping criterion has been met, such as 
   reaching a stage where information from the selected instances is contrary to the model, causing the 
   classifier confidence to drop, as in Vlachos (2008).
-  </pre>
+  </p>
           
 
 <h3 id=”Analysis and discussion”>Analysis and discussion</h3>
@@ -98,7 +104,7 @@ Table 1:Data on cost and lifespan of bridge repairs
 
 
 <h3 id="References">References</h3>
-<pre>
+<p class="ex1">
   Angluin,D(1988),Queries and concept learning. Machine learning 2,(4),319-342.
     
   Brinker, K(2003),Incorporating Diversity in Active Learning with Support Vector Machines,
@@ -112,7 +118,7 @@ Table 1:Data on cost and lifespan of bridge repairs
     
   Campbell,C, Cristianini,N and smola,A (2000), Query learning with large margin classifiers.
   In: Proc. 17th Internat. Conf.on Machine Learning. Morgan Kaufman, Stanford, CA,111-118.
-</pre>
+</p>
           
    
 </body> 
