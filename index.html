@@ -71,7 +71,8 @@ active learning and traditional machine learning approaches. Our results show th
 </p>    
           
 <h3 id="Introduction">Introduction</h3>
-<p class="ex1" id="Introduction_InText">
+<pre id="Introduction_InText">  
+//class="ex1"
     Active Learning (Angluin, 1988, Cohn et al., 1994) is a paradigm where a concept is learnt by an intelligent machine through the
 interaction of an oracle with the machine system, over a sequence of learning epochs. A distinctive component in an active system
 is the querying strategy, used to sample candidate training instances from a pool and evaluate them for informativeness, i.e.,
@@ -83,11 +84,10 @@ After adding the newly labeled instances to the current training set, a revised 
 is to achieve an efficient, incremental advancement of learning at each epoch. The process is continued until some stopping
 criterion has been met, such as reaching a stage where information from the selected instances is contrary to the model, causing
 the classifier confidence to drop, as in Vlachos (2008).
-  </p>
+  </pre>
           
 
-<h3 id=”Analysis and discussion”>Analysis and discussion</h3>
-<p id="Analysis_InText">         
+<h3 id=”Analysis and discussion”>Analysis and discussion</h3>        
 Table 1:Data on cost and lifespan of bridge repairs
 <table>
 <tr>
@@ -99,7 +99,6 @@ Table 1:Data on cost and lifespan of bridge repairs
 <tr><td>17.4 m</td><td>7</td></tr>
 <tr><td>8.8 m</td><td>9</td></tr>
 </table>  
-</p>
 
 
 <h3 id="References">References</h3>
@@ -137,7 +136,7 @@ In: Proc. 17th Internat. Conf. on Machine Learning. Morgan Kaufman, Stanford, CA
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction_InText");   // 替换id
-    const AnalysisCount = displayWordCount("Analysis_InText");   //替换id
+    const AnalysisCount = displayWordCount("Introduction_InText");   //替换id Analysis_InText
     // Calculate the sum of all selected sections
     const totalWordCount = IntroductionCount + AnalysisCount;
     // Display the total word count
