@@ -142,7 +142,7 @@ In: Proc. 17th Internat. Conf. on Machine Learning. Morgan Kaufman, Stanford, CA
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
   // Run the function for specific sections and display total count when the page loads
-  window.onload = displayTotalWordCount;
+  //window.onload = displayTotalWordCount;
 </script>
 
 
@@ -202,7 +202,13 @@ In: Proc. 17th Internat. Conf. on Machine Learning. Morgan Kaufman, Stanford, CA
   }
 
   // Initial load to display the time on page load
-  window.onload = getLastUpdatedTime;
+  //window.onload = getLastUpdatedTime;
+</script>
+<script>
+window.onload = function () {
+  displayTotalWordCount();
+  getLastUpdatedTime();
+};
 </script>
 
           
