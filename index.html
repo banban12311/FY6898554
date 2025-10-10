@@ -62,13 +62,13 @@ body {
           
 
 <h3 id="Abstract">Abstract</h3>
-<p class="ex1">
+<pre id="Abstract_InText">
    This paper presents a novel adaptive active learning strategy. The most accurate classification model from a heterogeneous
 classifier pool is selected at each learning epoch. Our goal is to achieve greater incremental improvement in accuracy, compared
 to using a single type of classification model throughout the process. The strategy is evaluated on benchmark data sets.
 We further consider an application to texture classification problems in sonar mosaic imagery and compare it with non-adaptive
 active learning and traditional machine learning approaches. Our results show that.. we conclude that..
-</p>    
+</pre>    
           
 <h3 id="Introduction">Introduction</h3>
     <pre id="Introduction_InText">  
@@ -101,7 +101,7 @@ Table 1:Data on cost and lifespan of bridge repairs
 
 
 <h3 id="References">References</h3>
-<p class="ex1">
+<pre>
   Angluin, D (1988), Queries and concept learning. Machine learning 2, (4), 319-342.<br><br>
 Brinker, K (2003), Incorporating Diversity in Active Learning with Support Vector Machines,
 Proceedings of the Twentieth International Conference on Machine Learning (ICML-2003).<br><br>
@@ -111,7 +111,7 @@ Bruzzone, L and Persello, C (2009), Active learning for classification of remote
 In: Geoscience and Remote Sensing Symposium, 2009 IEEE International, IGARSS 2009, 3.<br><br>
 Campbell, C, Cristianini, N and Smola, A (2000), Query learning with large margin classifiers.
 In: Proc. 17th Internat. Conf. on Machine Learning. Morgan Kaufman, Stanford, CA, 111-118.
-</p>
+</pre>
           
 <!-- //////////////////////////////////////////////////////////////////////////////// -->
   <!-- ////////////////////////////// Word count function ////////////////////////////// -->
@@ -135,9 +135,9 @@ In: Proc. 17th Internat. Conf. on Machine Learning. Morgan Kaufman, Stanford, CA
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction_InText");   // 替换id
-    //const AnalysisCount = displayWordCount("Analysis_InText");   //替换id 
+    const AnalysisCount = displayWordCount("Analysis_InText");   //替换id 
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount // + AnalysisCount;
+    const totalWordCount = IntroductionCount  + AnalysisCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
